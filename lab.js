@@ -59,7 +59,7 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
-
+var firstItem = arr[0];
 
 ////////// PROBLEM 5 //////////
 /*
@@ -67,6 +67,8 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
+var lastItemRemoved = arr[5]; //is there a shorthand arr.function that returns the last item regardless of size?
+arr.pop();
 
 ////////// PROBLEM 6 //////////
 
@@ -79,7 +81,7 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-
+for(let i = 0; i < family.length(); i++) console.log(`${family[i]}`);
 
 
 ////////// PROBLEM 7 //////////
@@ -94,8 +96,9 @@ let evensArr = []
 */
 
 //Code Here
-
-
+for(let i = 0; i < nums.length(); i++) if(((nums[i] / 2) * 2) === nums) evensArr.push(nums[i]);
+console.log(`Testing evens array`);
+for(let i = 0; i < evensArr.length(); ++i) console.log(`${evensArr[i]}`);
 
 ////////// PROBLEM 8 //////////
 
