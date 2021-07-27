@@ -96,7 +96,12 @@ let evensArr = []
 */
 
 //Code Here
-for(let i = 0; i < nums.length; i++) if(nums % 2 === 0) evensArr.push(nums[i]);
+for(let i = 0; i < nums.length; i++){ 
+  console.log(`${nums[i]} : ${nums[i] % 2}`);
+  if((nums[i] % 2) === 0) {
+    evensArr.push(nums[i]);
+  }
+}
 console.log(`Testing evens array`); 
 for(let i = 0; i < evensArr.length; ++i) console.log(`${evensArr[i]}`);
 
@@ -204,6 +209,26 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
+switch(letterGrade) {
+  case 'A':
+    console.log("The student is doing excellently.");
+    break;
+  case 'B':
+    console.log("The student is doing well.");
+    break;
+  case 'C':
+    console.log("The student is doing alright.");
+    break;
+  case 'D':
+    console.log("The student is not doing very welll.");
+    break;
+  case 'F':
+    console.log("The student is failing.");
+    break;
+  default:
+    console.log("Not an elligible grade.");
+  
+}
 
 
 
@@ -232,3 +257,14 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
+
+for(let i = 1; i < 101; i++){
+  let divByFive = (0 === (i % 5));
+  let divByThree = (0 === (i % 3));
+
+  if(divByFive && divByThree) console.log("Devmountain");
+  else if(divByThree) console.log("Dev");
+  else if(divByFive) console.log("mountain");
+  else console.log(`${i}`);
+
+}
