@@ -96,7 +96,7 @@ let evensArr = []
 */
 
 //Code Here
-for(let i = 0; i < nums.length; i++) if(nums % 2 === 0) evensArr.push(nums[i];
+for(let i = 0; i < nums.length; i++) if(nums % 2 === 0) evensArr.push(nums[i]);
 console.log(`Testing evens array`); 
 for(let i = 0; i < evensArr.length; ++i) console.log(`${evensArr[i]}`);
 
