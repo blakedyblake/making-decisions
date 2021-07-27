@@ -67,7 +67,7 @@ var firstItem = arr[0];
 */
 
 //Code Here
-var lastItemRemoved = arr[5]; //is there a shorthand arr.function that returns the last item regardless of size?
+var lastItemRemoved = arr[arr.length - 1]; //is there a shorthand arr.function that returns the last item regardless of size?
 arr.pop();
 
 ////////// PROBLEM 6 //////////
@@ -97,7 +97,7 @@ let evensArr = []
 
 //Code Here
 for(let i = 0; i < nums.length; i++){ 
-  console.log(`${nums[i]} : ${nums[i] % 2}`);
+  //console.log(`${nums[i]} : ${nums[i] % 2}`); was for debugging
   if((nums[i] % 2) === 0) {
     evensArr.push(nums[i]);
   }
